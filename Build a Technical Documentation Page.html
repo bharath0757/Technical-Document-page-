@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Documentation</title>
+    <link rel="stylesheet" href="Build a Technical Documentation Page.css">    
+</head>
+<body>
+    <nav id="navbar">
+        <header>Responsive Web Design</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Media_Queries" class="nav-link">Media Queries</a>
+        <a href="#Flexible_Grids" class="nav-link">Flexible Grids</a>
+        <a href="#Flexible_Images" class="nav-link">Flexible Images</a>
+        <a href="#Viewport_Meta_Tag" class="nav-link">Viewport Meta Tag</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
+            <p>Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD.</p>
+            <code>@media (min-width: 768px) { ... }</code>
+            <p>Key concepts include:</p>
+            <ul>
+                <li>Media queries</li>
+                <li>Flexible grids</li>
+                <li>Flexible images</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Media_Queries">
+            <header>Media Queries</header>
+            <p>Media queries allow you to apply CSS styles depending on a device's general type or specific characteristics.</p>
+            <p>They are a key component of responsive design.</p>
+            <code>@media screen and (max-width: 600px) { body { background-color: lightblue; } }</code>
+            <p>Common breakpoints:</p>
+            <ul>
+                <li>Mobile: 320px - 480px</li>
+                <li>Tablet: 481px - 768px</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Flexible_Grids">
+            <header>Flexible Grids</header>
+            <p>A flexible grid-based layout is one of the cornerstones of responsive design.</p>
+            <p>Using relative units like percentages or fr units in CSS Grid helps create flexible layouts.</p>
+            <code>.container { display: grid; grid-template-columns: 1fr 2fr; }</code>
+            <p>Benefits include:</p>
+            <ul>
+                <li>Adaptability to different screen sizes</li>
+                <li>Consistent proportions</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Flexible_Images">
+            <header>Flexible Images</header>
+            <p>Images in responsive design should be able to scale with the layout.</p>
+            <p>This can be achieved with CSS:</p>
+            <code>img { max-width: 100%; height: auto; }</code>
+            <p>Additional techniques:</p>
+            <ul>
+                <li>Picture element</li>
+                <li>Srcset attribute</li>
+            </ul>
+            <p>These methods help deliver appropriately sized images to different devices.</p>
+        </section>
+
+        <section class="main-section" id="Viewport_Meta_Tag">
+            <header>Viewport Meta Tag</header>
+            <p>The viewport meta tag controls how a page is displayed on a mobile device.</p>
+            <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+            <p>Without it, mobile devices will render the page at a typical desktop screen width.</p>
+            <p>Important attributes:</p>
+            <ul>
+                <li>width=device-width</li>
+                <li>initial-scale</li>
+            </ul>
+            <p>This tag is essential for proper mobile rendering.</p>
+        </section>
+    </main>
+</body>
+</html>
